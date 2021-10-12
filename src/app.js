@@ -15,7 +15,10 @@ app.get("/repositories", (request, response) => {
 });
 
 app.post("/repositories", (request, response) => {
-  // TODO
+   const {title , url , techs} = request;
+   console.log(` Recebi os parametro titulo como :${title}`);
+   console.log(` Recebi os parametro url como :${url}`)
+   console.log(` Recebi os parametro techs como :${techs}`)
 });
 
 app.put("/repositories/:id", (request, response) => {
